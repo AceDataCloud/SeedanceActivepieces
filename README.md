@@ -8,12 +8,15 @@ Create a Seedance text-to-video task and retrieve the **same task ID** through A
 
 In Activepieces 0.92.2+, open **Platform Admin → Catalogue → Pieces → Install Piece → NPM Registry**. Enter `@acedatacloud/piece-seedance` and version `0.1.0`. Search for **Seedance by Ace Data Cloud** when adding a flow action, then check the logo and both actions.
 
-Create a connection using an Ace Data Cloud API key with access to `/seedance/videos` and `/seedance/tasks`. Enter only the key, without `Bearer `. Keep it in the connection, never in a flow export. Check current [pricing](https://platform.acedata.cloud/models) and balance before generating.
+1. Register or sign in at [Ace Data Cloud Applications](https://platform.acedata.cloud/console/applications?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=seedance_activepieces_readme_api_key). If you have no General application, choose **Initialize General Application**.
+2. Open a General application or an application with **Seedance** access. A General key can access the services your account is entitled to use; a service-specific key is limited to that service.
+3. Use the application's copy button, or choose **Manage Keys → Create** to create a separate key named `Activepieces Seedance`. Set expiry and usage limits as needed. If you restrict **Allowed APIs**, include both `/seedance/videos` and `/seedance/tasks`, then copy the key.
+4. Create an Activepieces connection and enter only the API key, without `Bearer `. A `platform-...` management token is not a generation API key. Keep the key in the connection, never in a flow export. Check current [pricing](https://platform.acedata.cloud/models?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=seedance_activepieces_readme_pricing) and balance before generating.
 
 ## First flow
 
 1. Add **Create Seedance video task**. Enter a text description. For a small first run, choose `doubao-seedance-2-0-mini-260615`, `480p`, 4 seconds, `16:9`, and leave **Generate audio** off.
-2. Run creation **once** and save `task_id`. The action uses `callback_url` for asynchronous submission and has no HTTP retry. If a timeout or 5xx occurs, inspect request history before trying again: a task may already exist.
+2. Run creation **once** and save `task_id`. The action uses `callback_url` for asynchronous submission and has no HTTP retry. If a timeout or 5xx occurs, inspect [request history](https://platform.acedata.cloud/console/usages?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=seedance_activepieces_readme_request_history) before trying again: a task may already exist.
 3. Add **Get Seedance task** and map **Task ID** from the creation output. Query that same ID until `status=succeeded` or `failed`. Pending media is not returned as final video.
 4. Open a URL in `media_urls` only when `success=true`. A task lookup does not create or bill another video.
 
