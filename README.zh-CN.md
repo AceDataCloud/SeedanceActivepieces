@@ -38,3 +38,5 @@ Piece 提供三个 Seedance 2.0 文生视频模型，以及通用的 `480p`/`720
 | `failed` | 用任务或 Trace ID 查失败原因。 |
 
 Piece 只向 `https://api.acedata.cloud` 发送所选输入和 API Key，仅在终态返回媒体 URL，并过滤内部路由字段。[源码](https://github.com/AceDataCloud/SeedanceActivepieces) · [支持](https://github.com/AceDataCloud/SeedanceActivepieces/issues) · dev@acedata.cloud。
+
+API 请求验证 HTTPS 证书，且仅访问 `api.acedata.cloud`。网络失败与 HTTP 错误不自动重试；重新创建前先查请求历史。此传输方式不支持 HTTPS 代理配置。

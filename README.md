@@ -38,3 +38,5 @@ An isolated Activepieces CE 0.92.2 instance accepted the build archive and ran *
 | `failed` | Use the task or trace ID to inspect the failed request. |
 
 The Piece sends selected inputs and the API key only to `https://api.acedata.cloud`. It exposes final media URLs and removes internal routing fields from task output. [Source](https://github.com/AceDataCloud/SeedanceActivepieces) · [Support](https://github.com/AceDataCloud/SeedanceActivepieces/issues) · dev@acedata.cloud.
+
+API requests verify HTTPS certificates and stay on `api.acedata.cloud`. Transport failures and HTTP errors are not retried automatically; inspect request history before resubmitting a creation. HTTPS proxy configuration is not supported by this transport.
