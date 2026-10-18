@@ -2,11 +2,11 @@
 
 通过 Ace Data Cloud 创建 Seedance 文生视频任务，并按**同一个任务 ID**查询结果。Piece 提供 **Create Seedance video task** 与 **Get Seedance task** 两个动作。拿到任务 ID 不代表视频已经完成。[English](README.md)
 
-**分发方式：**在 Activepieces 实例中将 `@acedatacloud/piece-seedance@0.1.0` 作为自定义 Piece 安装。公开 npm 包不会自动进入 Activepieces 共享目录。
+**分发方式：**在 Activepieces 实例中将 `@acedatacloud/piece-seedance@0.1.1` 作为自定义 Piece 安装。公开 npm 包不会自动进入 Activepieces 共享目录。
 
 ## 安装与连接
 
-Activepieces 0.92.2+ 中进入 **Platform Admin → Catalogue → Pieces → Install Piece → NPM Registry**，填写 `@acedatacloud/piece-seedance` 和版本 `0.1.0`。在流程中搜索 **Seedance by Ace Data Cloud**，核对 Logo 和两个动作。
+Activepieces 0.92.2+ 中进入 **Platform Admin → Catalogue → Pieces → Install Piece → NPM Registry**，填写 `@acedatacloud/piece-seedance` 和版本 `0.1.1`。在流程中搜索 **Seedance by Ace Data Cloud**，核对 Logo 和两个动作。
 
 1. 在 [Ace Data Cloud Applications](https://platform.acedata.cloud/console/applications?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=seedance_activepieces_readme_api_key) 注册或登录。若没有通用应用，点击 **Initialize General Application**。
 2. 打开通用应用或具备 **Seedance** 权限的应用。通用 Key 可访问账号已获授权的服务；专用 Key 仅限对应服务。
