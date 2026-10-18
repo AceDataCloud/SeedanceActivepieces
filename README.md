@@ -2,11 +2,11 @@
 
 Create a Seedance text-to-video task and retrieve the **same task ID** through Ace Data Cloud. The Piece has two actions: **Create Seedance video task** and **Get Seedance task**. A task ID means the request was accepted, not that the video is ready. [中文指南](README.zh-CN.md)
 
-**Distribution:** Install `@acedatacloud/piece-seedance@0.1.0` as a custom Piece in your Activepieces instance. A public npm package does not automatically enter the shared Activepieces catalog.
+**Distribution:** Install `@acedatacloud/piece-seedance@0.1.1` as a custom Piece in your Activepieces instance. A public npm package does not automatically enter the shared Activepieces catalog.
 
 ## Install and connect
 
-In Activepieces 0.92.2+, open **Platform Admin → Catalogue → Pieces → Install Piece → NPM Registry**. Enter `@acedatacloud/piece-seedance` and version `0.1.0`. Search for **Seedance by Ace Data Cloud** when adding a flow action, then check the logo and both actions.
+In Activepieces 0.92.2+, open **Platform Admin → Catalogue → Pieces → Install Piece → NPM Registry**. Enter `@acedatacloud/piece-seedance` and version `0.1.1`. Search for **Seedance by Ace Data Cloud** when adding a flow action, then check the logo and both actions.
 
 1. Register or sign in at [Ace Data Cloud Applications](https://platform.acedata.cloud/console/applications?utm_source=opensource&utm_medium=referral&utm_campaign=evergreen&utm_content=seedance_activepieces_readme_api_key). If you have no General application, choose **Initialize General Application**.
 2. Open a General application or an application with **Seedance** access. A General key can access the services your account is entitled to use; a service-specific key is limited to that service.
