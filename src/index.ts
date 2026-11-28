@@ -5,7 +5,7 @@ import { getTask } from './lib/actions/get-task';
 import { seedanceAuth } from './lib/auth';
 
 export const seedance = createPiece({
-  displayName: 'Seedance by Ace Data Cloud',
+  displayName: 'Seedance',
   description: 'Create Seedance videos and retrieve the same task through Ace Data Cloud.',
   logoUrl: 'https://cdn.acedata.cloud/9q90dl.png',
   authors: ['Ace Data Cloud'],

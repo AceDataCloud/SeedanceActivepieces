@@ -8,7 +8,7 @@ Create a Seedance text-to-video task and retrieve the **same task ID** through A
 
 ## Install and connect
 
-In Activepieces 0.92.2+, open **Platform Admin → Catalogue → Pieces → Install Piece → NPM Registry**. Enter `@acedatacloud/piece-seedance` and version `0.1.3`. Search for **Seedance by Ace Data Cloud** when adding a flow action, then check the logo and both actions.
+In Activepieces 0.92.2+, open **Platform Admin → Catalogue → Pieces → Install Piece → NPM Registry**. Enter `@acedatacloud/piece-seedance` and version `0.1.4`. Search for **Seedance** when adding a flow action, then check the logo and both actions.
 
 1. Register or sign in at [Ace Data Cloud Applications](https://platform.acedata.cloud/console/applications?utm_source=github&utm_medium=referral&utm_campaign=evergreen). If you have no General application, choose **Initialize General Application**.
 2. Open a General application or an application with **Seedance** access. A General key can access the services your account is entitled to use; a service-specific key is limited to that service.
@@ -49,4 +49,4 @@ API requests verify HTTPS certificates and stay on `api.acedata.cloud`. Transpor
 ![Create a dedicated key: real redacted Ace console](../docs/screenshots/create-api-key-en.png)
 ![Official Activepieces generic installation dialog](../docs/screenshots/install-piece.png)
 
-References reused on 2026-10-18; [fixed sources and limits](../docs/screenshots/onboarding-source.json). The installation picture is an official generic reference, not proof this Piece is in the shared catalog. After administrator installation, search the service name, select **by Ace Data Cloud**, and keep the raw API key in the action connection. Source PR, immutable npm release, official shared-catalog acceptance and first use are separate stages.
+References reused on 2026-10-18; [fixed sources and limits](../docs/screenshots/onboarding-source.json). The installation picture is an official generic reference, not proof this Piece is in the shared catalog. After administrator installation, search the service name, select **Seedance** from the installed `@acedatacloud/piece-seedance` package, and keep the raw API key in the action connection. Source PR, immutable npm release, official shared-catalog acceptance and first use are separate stages.
